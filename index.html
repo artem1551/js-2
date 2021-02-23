@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <style>
+        [class*="player-"] {
+            position: fixed;
+        }
+
+        .solid {
+            border: 2px solid black;
+        }
+
+        .products {
+            display: flex;
+        }
+
+        .product {
+            height: 200px;
+            width: 120px;
+            border-radius: 20px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product__title {
+            text-align: center;
+            margin-top: 25px;
+        }
+        .product__price {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .product__image {
+            width: 100%;
+        }
+
+        .grey {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body style="font-family: monospace;">
+    <ul class="user-list"></ul>
+
+    <div class="products"></div>
+    <hr>
+    <div class="cart_amoun">Total: <span id="total">0</span></div>
+    <form name="moneyForm">
+        <select name="moneySelect" id="selectedMoney">
+            <option value="" selected="selected" id="uah">UAH</option>
+            <option value="" id="euro">EUR</option>
+            <option value="" id="dollar">USD</option>
+        </select>
+    </form>
+    <button id="deleted">Clear</button>
+    <div id="select"></div>
+</body>
+</html>
